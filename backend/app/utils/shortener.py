@@ -1,4 +1,3 @@
-# shortener.py
 from ..config import CONSTANT
 
 constant_inverse = pow(CONSTANT, -1, 2**64)
