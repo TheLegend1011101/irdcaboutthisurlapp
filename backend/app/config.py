@@ -6,6 +6,8 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 CONSTANT = int(os.getenv("CONSTANT", "0"))
 DATABASE_URL = os.getenv("DATABASE_URL")
+raw_origin = os.getenv("CORS_ORIGINS", "http://localhost:5173")
+ORIGIN = raw_origin
 
 if not SECRET_KEY:
     raise RuntimeError("SECRET_KEY is missing")
